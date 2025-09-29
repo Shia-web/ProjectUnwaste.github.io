@@ -1,0 +1,434 @@
+
+/* STYLE SECTIONING TAGS */
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.header {
+  font-family:"Times New Roman", serif;
+  font-size: 770%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.subtitle {
+  margin-top: 0px;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #333;
+  font-style: italic;
+}
+.video {
+  text-align: center;
+}
+/*IMAGE STYLE*/
+#i {max-width: 800px;
+    width: 100%;  
+    margin: 40px;
+    }
+/*YT PLAYLIST STYLE*/
+.playlist a:link {
+  background-color: #e6fff2;
+  color:black;
+  padding: 14px 25px;
+  font-size: 1.5em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  allign-items: center;
+  text-decoration: underline;
+}
+/* HOME SECTION BG IMAGE */
+.home-section {
+  height: 100vh;
+  background-image: url('assets/main.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTENT OVERLAY */
+.content {
+  text-align: center;
+  color: white;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  max-width: 800px;
+}
+
+/* MAIN CONTENT SECTION */
+.main-content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 2.5em;
+}
+
+/* TOOLS PAGE BG IMAGE*/
+.tool-section {
+  height: 100vh;
+  background-image: url('assets/volunteer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* WHY BG IMAGE */
+.why-section {
+  height: 100vh;
+  background-image: url('assets/landfill.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* STYLE TEXT */
+h1 {
+  color: white;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+  line-height: 1.2;
+  font-family:"Montserrat";
+}
+
+h2 {
+  color: #003344;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin:20px 40px;
+  font-family:"Times New Roman", heirarchy;
+  text-align: center;
+}
+.quote {
+  font-family:"Baskerville";
+  font-style: italics;
+  font-weight: bold;
+  color: 	#001a00;
+  border-left: 6px solid #00a8cc;
+  padding-left: 15px;
+  margin: 20px;
+  font-size: 2.5em;
+}
+.section {
+  margin-bottom: 60px;
+}
+p{
+  font-size:2em;
+  font-family: "Garamond", serif;
+  margin: 10px 20PX;
+  text-align: center;
+}
+.highlight {
+  color: #007399;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+/*TABLE STYLE*/
+table {
+  width: 75%;
+  border-collapse: collapse;
+  background: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  margin: 40px;
+  
+}
+
+th, td {
+  padding: 16px;
+  text-align: left;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  font-size:1.25em;
+  font-family:"Georgia",serif;
+}
+
+th {
+  color: #333;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  text-align:center;
+}
+
+
+.note {
+  font-family:"Consolas", monospace;
+  font-size: 1.25em;
+  margin-top: 10px;
+ font-style: italic;
+}
+
+/*STYLE CARD*/
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px;
+  
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card .card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  font-size: 1.75em;
+  margin: 0 0 8px;
+}
+
+/*STYLE NAV*/
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(to right,  #99b3e6, 	 #1f3d7a); 
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.nav a {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; 
+  padding: 0;
+  margin: 0;
+}
+
+nav a:hover {
+  background-color: #ffffff22;
+  color: #fff;
+  cursor: pointer;}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+li{
+  display: inline-block;
+}
+li a {
+  color: #190039;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+/* QUIZ*/
+.quiz-container {
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at 20% 20%, #d0f0c0, #ffffff 70%);
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+.quiz-content {
+  margin:10px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  display:flex;
+}
+.quiz-content h2 {
+  text-align: center;
+  color: #09332b;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.question p {
+font-weight: bold;
+font-size:1.5em;
+}
+
+label {
+  display: block;
+  margin-bottom:0.5rem 0;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+.buttons{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #234d20;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #3a7740;
+}
+
+#result {
+  margin-top:2rem;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+}
+/* Fact Generator*/
+.myFacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;
+  min-height: 25vh;      
+  padding: 20px;
+}
+
+.myFacts h5,h6 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+  background-color:#e6ffff;
+}
+
+
+#fact {
+  margin-top: 25px;
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #222;
+}
+
+#factButton {
+  padding: 10px 25px;
+  background-color: #005f3c;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#factButton:hover {
+  background-color: #01734e;
+}
+/* PLEDGE*/
+.pledge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;
+  min-height: 25vh;      
+  padding: 20px;
+}
+.pledge h5,h6 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+#secret {
+  margin-top: 25px;
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #222;
+}
+#pledgeButton:hover {
+  background-color: #01734e;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 650px) {
+  .content {
+    padding: 30px;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+    header {
+    font-size: 2.5rem;
+    }
+  #i {
+    max-width: 210px;
+  }
+}
